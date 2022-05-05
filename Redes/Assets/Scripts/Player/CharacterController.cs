@@ -10,6 +10,7 @@ public class CharacterController : MonoBehaviourPun
     Character _character;
     private void Awake()
     {
+        //Para que haya un unico controller
         if(!photonView.IsMine) Destroy(this);       
         _character = GetComponent<Character>();
     }

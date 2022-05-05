@@ -15,6 +15,7 @@ public class NetManager : MonoBehaviourPunCallbacks
     private void Start()
     {
         connectButton.interactable = false;
+        //Para que se conecte usando las settings seteadas en el photonserver
         PhotonNetwork.ConnectUsingSettings();        
     }
     //Primer paso es conectar al master
@@ -38,7 +39,7 @@ public class NetManager : MonoBehaviourPunCallbacks
         RoomOptions options = new RoomOptions();
         options.IsOpen = true;
         options.IsVisible = true;
-        options.MaxPlayers = 10;
+        options.MaxPlayers = 4;
         PhotonNetwork.JoinOrCreateRoom(inputFieldRoom.text, options, TypedLobby.Default);
         connectButton.interactable = false;
     }
@@ -51,6 +52,7 @@ public class NetManager : MonoBehaviourPunCallbacks
         print("Join Room");
         PhotonNetwork.LoadLevel("Game");
     }
+    //Si falla algo o me desconecto tengo que volver a habilitar el boton para conectarme
     public override void OnCreateRoomFailed(short returnCode, string message)
     {
         connectButton.interactable = true;
