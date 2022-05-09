@@ -47,6 +47,7 @@ public class NetManager : MonoBehaviourPunCallbacks
     {
         print("Create Room");
     }
+    //Una vez unido a la sala cargo el nivel
     public override void OnJoinedRoom()
     {
         print("Join Room");

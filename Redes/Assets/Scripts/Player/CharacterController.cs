@@ -17,6 +17,7 @@ public class CharacterController : MonoBehaviourPun
    
     void Update()
     {
+        //Movimiento y salto
         var x = Input.GetAxis("Horizontal");        
         Vector2 dir = new Vector2(x, 0);
         _character.Move(dir.normalized);

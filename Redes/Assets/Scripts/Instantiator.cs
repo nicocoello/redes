@@ -7,11 +7,12 @@ using Photon.Realtime;
 public class Instantiator : MonoBehaviour
 {
     public Transform point;
+    public Transform spawnPoint;
     public string prefabName;
     void Start()
     {
-        //Instancio los diferentes prefabs
-       var obj = PhotonNetwork.Instantiate(prefabName,Vector3.zero,Quaternion.identity);
+        //Instancio los diferentes prefabs de la carpeta resources
+       var obj = PhotonNetwork.Instantiate(prefabName,spawnPoint.position,Quaternion.identity);
        var nick = PhotonNetwork.Instantiate("PlayerNickName", point.position,point.rotation);              
        nick.GetComponent<PlayerNickNames>().SetNick(PhotonNetwork.LocalPlayer.NickName,obj);
     }

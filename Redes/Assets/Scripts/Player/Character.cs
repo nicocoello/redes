@@ -32,7 +32,8 @@ public class Character : MonoBehaviour
             timeSinceLastJump = 0;
             _rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }       
-    }    
+    }
+    //Setea que la funcion se va a reproducir en la red
     [PunRPC]
     public void ChangeColor(Vector3 infoColor)
     {

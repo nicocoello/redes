@@ -11,7 +11,8 @@ public class CharacterView : MonoBehaviourPun
         if (!photonView.IsMine) Destroy(this);
     }
     private void Start()
-    {     
+    {   
+        //OthersBuffered es para todos los demas que se conecten y para los que estan en ese momento.
         CallChangeColor(Color.red, RpcTarget.OthersBuffered);
         CallChangeColor(Color.green,photonView.Owner);        
     }
