@@ -21,7 +21,8 @@ public class CharacterController : MonoBehaviourPun
         var x = Input.GetAxis("Horizontal");        
         Vector2 dir = new Vector2(x, 0);
         _character.Move(dir.normalized);
-        if(Input.GetKeyDown(KeyCode.Space)||Input.GetKeyDown(KeyCode.W))
+        //Jump
+        if(_character.isGrounded == true && Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W))        
         {            
             _character.Jump();
         }
