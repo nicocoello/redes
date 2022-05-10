@@ -10,21 +10,14 @@ public class Character : MonoBehaviour
     float timeSinceLastJump = 0f;
     public float characterSpeed;
     public float jumpForce;    
-    Rigidbody2D _rb;
-    //Jump
-    public bool isGrounded;
-    public Transform feetPos;
-    public float checkRadius;
-    public LayerMask ground;
+    Rigidbody2D _rb;    
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();        
     }
     private void Update()
     {
-        timeSinceLastJump += Time.deltaTime;
-        //Jump
-        isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, ground);
+        timeSinceLastJump += Time.deltaTime;        
     }
     public void Move(Vector2 dir)
     {
@@ -37,8 +30,7 @@ public class Character : MonoBehaviour
         if(timeSinceLastJump > jumpCd)
         {
             timeSinceLastJump = 0;
-            _rb.velocity = Vector2.up * jumpForce;
-            
+            _rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);           
         }       
     }
     //Setea que la funcion se va a reproducir en la red

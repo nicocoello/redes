@@ -17,15 +17,20 @@ public class CharacterController : MonoBehaviourPun
    
     void Update()
     {
-        //Movimiento y salto
+        //Movimiento
         var x = Input.GetAxis("Horizontal");        
         Vector2 dir = new Vector2(x, 0);
         _character.Move(dir.normalized);
+        
         //Jump
-        if(_character.isGrounded == true && Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W))        
+        if (Input.GetKeyDown(KeyCode.Space)||Input.GetKeyDown(KeyCode.W))
         {            
             _character.Jump();
         }
     }
-   
+    
 }
+
+     
+ 
+ 
