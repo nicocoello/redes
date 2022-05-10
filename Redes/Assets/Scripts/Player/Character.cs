@@ -6,14 +6,14 @@ using Photon.Realtime;
 
 public class Character : MonoBehaviour
 {
-    float jumpCd =1f;
+    float jumpCd = 1f;
     float timeSinceLastJump = 0f;
     public float characterSpeed;
-    public float jumpForce;
+    public float jumpForce;    
     Rigidbody2D _rb;
     private void Awake()
     {
-        _rb = GetComponent<Rigidbody2D>();
+        _rb = GetComponent<Rigidbody2D>();        
     }
     private void Update()
     {
@@ -31,6 +31,7 @@ public class Character : MonoBehaviour
         {
             timeSinceLastJump = 0;
             _rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            
         }       
     }
     //Setea que la funcion se va a reproducir en la red
@@ -39,6 +40,5 @@ public class Character : MonoBehaviour
     {
         Color color = new Color(infoColor.x, infoColor.y,infoColor.z);
         GetComponent<Renderer>().material.color = color;
-    }
-   
+    }    
 }
