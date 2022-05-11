@@ -7,7 +7,7 @@ using Photon.Realtime;
 public class CameraFollow : MonoBehaviourPun
 {
     
-    //Objeto que quiero seguir
+  /*  //Objeto que quiero seguir
     GameObject _obj;
 
     // z -10
@@ -38,6 +38,6 @@ public class CameraFollow : MonoBehaviourPun
         Vector3 smoothPosition = Vector3.Lerp(transform.position, targetPosition, smoothing * Time.fixedDeltaTime);
         transform.position = smoothPosition;
     }
-    
+    */
    
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 
-public class Character : MonoBehaviour
+public class Character : MonoBehaviourPun
 {
     float jumpCd = 1f;
     float timeSinceLastJump = 0f;
@@ -21,9 +21,10 @@ public class Character : MonoBehaviour
     }
     public void Move(Vector2 dir)
     {
-        dir *= characterSpeed;
+        dir *= characterSpeed;       
         dir.y = _rb.velocity.y;
         _rb.velocity = dir;
+        
     }
     public void Jump()
     {
