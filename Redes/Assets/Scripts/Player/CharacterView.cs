@@ -9,11 +9,13 @@ public class CharacterView : MonoBehaviourPun
     Rigidbody2D _rb;
     Animator _anim;
     Character _char;
+    CharacterController _characterCon;
     private void Awake()
     {      
          _rb = GetComponent<Rigidbody2D>();
          _anim = GetComponent<Animator>();
         _char = GetComponent<Character>();
+        _characterCon = GetComponent<CharacterController>();
     }
     private void Start()
     {   
@@ -27,8 +29,9 @@ public class CharacterView : MonoBehaviourPun
         //El original obtiene la velocidad y le dice a los demas cual es para que la seteen.
         if (!photonView.IsMine) return;
         float speed = _rb.velocity.magnitude;
-        photonView.RPC("SetSpeed", RpcTarget.All, speed);       
-       
+        photonView.RPC("SetSpeed", RpcTarget.All, speed);        
+        bool isJumping = _characterCon.isClicking;
+        photonView.RPC("SetJump", RpcTarget.All, isJumping);       
     }      
     public void CallChangeColor(Color color, RpcTarget targets)
     {
@@ -44,7 +47,20 @@ public class CharacterView : MonoBehaviourPun
     public void SetSpeed(float speed)
     {
         _anim.SetFloat("Speed", speed);
-    }  
+    }
+    [PunRPC]
+    public void SetJump(bool isJumping)
+    {
+        if (isJumping == true)
+        {
+            _anim.SetBool("IsJumping", true);
+        }
+        else
+        {
+            _anim.SetBool("IsJumping", false);
+        }
+        
+    }
     
 
 }

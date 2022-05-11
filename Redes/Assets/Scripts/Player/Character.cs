@@ -12,7 +12,7 @@ public class Character : MonoBehaviourPun
     public float jumpForce;    
     Rigidbody2D _rb;
     //Jump
-    public bool isGrounded;
+    public bool isGrounded;    
     public Transform feetPos;
     public float checkRadius;
     public LayerMask whatIsGround;
@@ -30,15 +30,7 @@ public class Character : MonoBehaviourPun
         dir *= characterSpeed;       
         dir.y = _rb.velocity.y;
         _rb.velocity = dir;        
-    }
-    /*public void Jump()
-    {
-        if(timeSinceLastJump > jumpCd)
-        {
-            timeSinceLastJump = 0;
-            _rb.velocity = Vector2.up * jumpForce;
-        }        
-    }*/
+    }    
 
     public void Jump()
     {
