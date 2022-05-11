@@ -10,22 +10,36 @@ public class Character : MonoBehaviourPun
     float timeSinceLastJump = 0f;
     public float characterSpeed;
     public float jumpForce;    
-    Rigidbody2D _rb;    
+    Rigidbody2D _rb;
+    //Jump
+    public bool isGrounded;
+    public Transform feetPos;
+    public float checkRadius;
+    public LayerMask whatIsGround;
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();        
     }
     private void Update()
     {
-        timeSinceLastJump += Time.deltaTime;        
+        timeSinceLastJump += Time.deltaTime;
+        isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
     }
     public void Move(Vector2 dir)
     {
         dir *= characterSpeed;       
         dir.y = _rb.velocity.y;
-        _rb.velocity = dir;
-        
+        _rb.velocity = dir;        
     }
+    /*public void Jump()
+    {
+        if(timeSinceLastJump > jumpCd)
+        {
+            timeSinceLastJump = 0;
+            _rb.velocity = Vector2.up * jumpForce;
+        }        
+    }*/
+
     public void Jump()
     {
         if(timeSinceLastJump > jumpCd)

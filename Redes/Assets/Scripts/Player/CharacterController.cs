@@ -6,13 +6,14 @@ using Photon.Realtime;
 
 public class CharacterController : MonoBehaviourPun
 {
-    
+    Animator _anim;   
     Character _character;
     private void Awake()
     {
         //Para que haya un unico controller
         if(!photonView.IsMine) Destroy(this);       
         _character = GetComponent<Character>();
+        _anim = GetComponent <Animator>();
     }
    
     void Update()
@@ -23,9 +24,14 @@ public class CharacterController : MonoBehaviourPun
         _character.Move(dir.normalized);
         
         //Jump
-        if (Input.GetKeyDown(KeyCode.Space)||Input.GetKeyDown(KeyCode.W))
+        if (_character.isGrounded == true && Input.GetKeyDown(KeyCode.Space)||Input.GetKeyDown(KeyCode.W))
         {            
             _character.Jump();
+            _anim.SetBool("IsJumping", true);
+        }        
+        else
+        {
+            _anim.SetBool("IsJumping", false);
         }
     }
     
