@@ -52,6 +52,9 @@ MonoBehaviour:
   - Start
   - StartTimer
   - UpdateTimer
+  - SpeedPower
+  - Destroy
+  - SpeedPowerJump
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
