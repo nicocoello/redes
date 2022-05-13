@@ -4,37 +4,38 @@ using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 
-public class JumpPowerUp : MonoBehaviourPun
-{
-    bool _hasBoosted;
+public class TP : MonoBehaviourPun
+{   
     public Character _char;
+    public Transform destiny;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         var character = collision.GetComponent<Character>();
         _char = character;
-        if (PhotonNetwork.IsMasterClient && !_hasBoosted)
+        if (PhotonNetwork.IsMasterClient)
         {
-            _hasBoosted = true;
+            
 
             if (character != null)
             {
                 var photonViewCharacter = character.GetComponent<PhotonView>();
-                var boosted = photonViewCharacter.Owner;
-                photonView.RPC("JumpPowerJump", RpcTarget.All, boosted);
+                var Tped = photonViewCharacter.Owner;
+                photonView.RPC("Teleport", RpcTarget.All, Tped);
+                
             }
         }
     }
     [PunRPC]
-    void JumpPowerJump(Player player)
+    void Teleport(Player player)
     {
         if (player == PhotonNetwork.LocalPlayer)
         {
-            _char.jumpForce = 11;
-            Destroy(gameObject);
+            _char.transform.position = destiny.transform.position;            
         }
         else
         {
-            Destroy(gameObject);
-        }    
+            _char.transform.position = destiny.transform.position; 
+        }
+    }
 }
-}
+
