@@ -29,7 +29,7 @@ public class MovePowerUp : MonoBehaviourPun
     {
         if (player == PhotonNetwork.LocalPlayer)
         {
-            _char.characterSpeed = 20;
+            _char.characterSpeed = 4;
             Destroy(gameObject);
         }
         else

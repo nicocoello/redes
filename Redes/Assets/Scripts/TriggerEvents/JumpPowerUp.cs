@@ -29,7 +29,7 @@ public class JumpPowerUp : MonoBehaviourPun
     {
         if (player == PhotonNetwork.LocalPlayer)
         {
-            _char.jumpForce = 15;
+            _char.jumpForce = 11;
             Destroy(gameObject);
         }
         else
