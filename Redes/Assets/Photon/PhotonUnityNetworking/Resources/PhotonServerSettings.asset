@@ -58,6 +58,8 @@ MonoBehaviour:
   - JumpPowerJump
   - Teleport
   - TeleportBack
+  - Flip
+  - SetSpeed2
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

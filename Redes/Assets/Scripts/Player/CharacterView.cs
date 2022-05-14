@@ -10,12 +10,14 @@ public class CharacterView : MonoBehaviourPun
     Animator _anim;
     Character _char;
     CharacterController _characterCon;
+    SpriteRenderer _sprite;
     private void Awake()
     {      
          _rb = GetComponent<Rigidbody2D>();
-         _anim = GetComponent<Animator>();
-        _char = GetComponent<Character>();
+         _anim = GetComponent<Animator>();       
         _characterCon = GetComponent<CharacterController>();
+        _char = GetComponent<Character>();
+        _sprite = GetComponent<SpriteRenderer>();
     }
     private void Start()
     {   
@@ -28,9 +30,11 @@ public class CharacterView : MonoBehaviourPun
         //All porque es una informacion que se va pisando constantemente.
         //El original obtiene la velocidad y le dice a los demas cual es para que la seteen.
         if (!photonView.IsMine) return;
+        
         float speed = _rb.velocity.magnitude;
-        photonView.RPC("SetSpeed", RpcTarget.All, speed);        
-        bool isJumping = _characterCon.isClicking;
+       
+        photonView.RPC("SetSpeed", RpcTarget.All, speed);
+        bool isJumping = _char.isGrounded;
         photonView.RPC("SetJump", RpcTarget.All, isJumping);       
     }      
     public void CallChangeColor(Color color, RpcTarget targets)
@@ -44,23 +48,22 @@ public class CharacterView : MonoBehaviourPun
         photonView.RPC("ChangeColor", target, infoColor);
     }
     [PunRPC]
-    public void SetSpeed(float speed)
+    public void SetSpeed(float speed) 
     {
-        _anim.SetFloat("Speed", speed);
-    }
+                
+        _anim.SetFloat("Speed", speed);     
+        
+    }    
     [PunRPC]
     public void SetJump(bool isJumping)
     {
         if (isJumping == true)
         {
-            _anim.SetBool("IsJumping", true);
+            _anim.SetBool("IsJumping", false);
         }
         else
         {
-            _anim.SetBool("IsJumping", false);
-        }
-        
-    }
-    
-
+            _anim.SetBool("IsJumping", true);
+        }        
+    }   
 }

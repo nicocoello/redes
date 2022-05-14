@@ -285,6 +285,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DestroyingBox (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5014679366332481902, guid: 8661d74f6531ccd4c809392f045e6cbb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8661d74f6531ccd4c809392f045e6cbb, type: 3}
 --- !u!4 &23796736 stripped
@@ -369,6 +374,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SolidBox (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
@@ -455,6 +465,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &70935458 stripped
@@ -474,7 +489,7 @@ GameObject:
   - component: {fileID: 71126126}
   - component: {fileID: 71126128}
   - component: {fileID: 71126127}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -650,6 +665,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &88461173 stripped
@@ -724,6 +744,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SolidBox (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
@@ -815,6 +840,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SolidBox (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
@@ -918,7 +948,7 @@ GameObject:
   - component: {fileID: 129293758}
   - component: {fileID: 129293760}
   - component: {fileID: 129293759}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1099,6 +1129,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DestroyingBox (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5014679366332481902, guid: 8661d74f6531ccd4c809392f045e6cbb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8661d74f6531ccd4c809392f045e6cbb, type: 3}
 --- !u!4 &139388793 stripped
@@ -1118,7 +1153,7 @@ GameObject:
   - component: {fileID: 179746631}
   - component: {fileID: 179746633}
   - component: {fileID: 179746632}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1228,7 +1263,7 @@ GameObject:
   - component: {fileID: 190806981}
   - component: {fileID: 190806983}
   - component: {fileID: 190806982}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1404,6 +1439,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &196625949 stripped
@@ -1423,7 +1463,7 @@ GameObject:
   - component: {fileID: 237927934}
   - component: {fileID: 237927936}
   - component: {fileID: 237927935}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1589,6 +1629,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &243052960 stripped
@@ -1724,6 +1769,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &278911806 stripped
@@ -1809,6 +1859,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &292804650 stripped
@@ -1893,6 +1948,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SolidBox (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
@@ -1984,6 +2044,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DestroyingBox (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 5014679366332481902, guid: 8661d74f6531ccd4c809392f045e6cbb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8661d74f6531ccd4c809392f045e6cbb, type: 3}
 --- !u!4 &296271835 stripped
@@ -2063,6 +2128,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DestroyingBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014679366332481902, guid: 8661d74f6531ccd4c809392f045e6cbb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8661d74f6531ccd4c809392f045e6cbb, type: 3}
@@ -2149,6 +2219,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &319128306 stripped
@@ -2223,6 +2298,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SolidBox (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
@@ -2299,6 +2379,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &336016616 stripped
@@ -2318,7 +2403,7 @@ GameObject:
   - component: {fileID: 352323690}
   - component: {fileID: 352323692}
   - component: {fileID: 352323691}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2494,6 +2579,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &381055973 stripped
@@ -2579,6 +2669,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &385634141 stripped
@@ -2663,6 +2758,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SolidBox (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
@@ -2754,6 +2854,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DestroyingBox (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5014679366332481902, guid: 8661d74f6531ccd4c809392f045e6cbb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8661d74f6531ccd4c809392f045e6cbb, type: 3}
 --- !u!4 &410029948 stripped
@@ -2773,7 +2878,7 @@ GameObject:
   - component: {fileID: 418852514}
   - component: {fileID: 418852516}
   - component: {fileID: 418852515}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2883,7 +2988,7 @@ GameObject:
   - component: {fileID: 426019254}
   - component: {fileID: 426019256}
   - component: {fileID: 426019255}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2993,7 +3098,7 @@ GameObject:
   - component: {fileID: 449035074}
   - component: {fileID: 449035076}
   - component: {fileID: 449035075}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3169,6 +3274,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &466186963 stripped
@@ -3188,6 +3298,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DeathFloor (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479513712323347865, guid: a3a8e85229d28fb4bbf33635c8670aa9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2479513712323347867, guid: a3a8e85229d28fb4bbf33635c8670aa9,
         type: 3}
@@ -3354,6 +3469,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &516148965 stripped
@@ -3428,6 +3548,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpeedPowerUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4003753492237965525, guid: e69aa6da373a19a408c3ccf8172c82aa,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4003753492237965527, guid: e69aa6da373a19a408c3ccf8172c82aa,
         type: 3}
@@ -3556,6 +3681,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &592484026 stripped
@@ -3641,6 +3771,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &618824723 stripped
@@ -3715,6 +3850,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SolidBox (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
@@ -3801,6 +3941,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &633077406 stripped
@@ -3885,6 +4030,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SolidBox (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
@@ -3975,6 +4125,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DestroyingBox (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014679366332481902, guid: 8661d74f6531ccd4c809392f045e6cbb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8661d74f6531ccd4c809392f045e6cbb, type: 3}
@@ -4070,7 +4225,7 @@ GameObject:
   - component: {fileID: 716505099}
   - component: {fileID: 716505101}
   - component: {fileID: 716505100}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4181,6 +4336,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DeathFloor (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2479513712323347865, guid: a3a8e85229d28fb4bbf33635c8670aa9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2479513712323347867, guid: a3a8e85229d28fb4bbf33635c8670aa9,
         type: 3}
       propertyPath: m_RootOrder
@@ -4280,7 +4440,7 @@ GameObject:
   - component: {fileID: 724543471}
   - component: {fileID: 724543473}
   - component: {fileID: 724543472}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4456,6 +4616,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &754978391 stripped
@@ -4475,6 +4640,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DeathFloor (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479513712323347865, guid: a3a8e85229d28fb4bbf33635c8670aa9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2479513712323347867, guid: a3a8e85229d28fb4bbf33635c8670aa9,
         type: 3}
@@ -4646,6 +4816,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DestroyingBox (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5014679366332481902, guid: 8661d74f6531ccd4c809392f045e6cbb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8661d74f6531ccd4c809392f045e6cbb, type: 3}
 --- !u!4 &784750439 stripped
@@ -4665,7 +4840,7 @@ GameObject:
   - component: {fileID: 801227875}
   - component: {fileID: 801227877}
   - component: {fileID: 801227876}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4773,7 +4948,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 815552305}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4830,7 +5005,7 @@ GameObject:
   - component: {fileID: 840665846}
   - component: {fileID: 840665848}
   - component: {fileID: 840665847}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4940,7 +5115,7 @@ GameObject:
   - component: {fileID: 841281030}
   - component: {fileID: 841281032}
   - component: {fileID: 841281031}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5050,7 +5225,7 @@ GameObject:
   - component: {fileID: 868139472}
   - component: {fileID: 868139474}
   - component: {fileID: 868139473}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5237,7 +5412,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 890839290}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DestroyingBoxes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5452,6 +5627,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &916280204 stripped
@@ -5537,6 +5717,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &942991306 stripped
@@ -5621,6 +5806,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SolidBox (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
@@ -5712,6 +5902,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DestroyingBox (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5014679366332481902, guid: 8661d74f6531ccd4c809392f045e6cbb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8661d74f6531ccd4c809392f045e6cbb, type: 3}
 --- !u!4 &1004524015 stripped
@@ -5731,7 +5926,7 @@ GameObject:
   - component: {fileID: 1035474832}
   - component: {fileID: 1035474834}
   - component: {fileID: 1035474833}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5912,6 +6107,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DestroyingBox (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5014679366332481902, guid: 8661d74f6531ccd4c809392f045e6cbb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8661d74f6531ccd4c809392f045e6cbb, type: 3}
 --- !u!4 &1093278765 stripped
@@ -5931,7 +6131,7 @@ GameObject:
   - component: {fileID: 1110977007}
   - component: {fileID: 1110977009}
   - component: {fileID: 1110977008}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6133,6 +6333,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpeedPowerUp (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4003753492237965525, guid: e69aa6da373a19a408c3ccf8172c82aa,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4003753492237965527, guid: e69aa6da373a19a408c3ccf8172c82aa,
         type: 3}
       propertyPath: sceneViewId
@@ -6155,7 +6360,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1136439597}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DeathFloors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6265,6 +6470,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DestroyingBox (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5014679366332481902, guid: 8661d74f6531ccd4c809392f045e6cbb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8661d74f6531ccd4c809392f045e6cbb, type: 3}
 --- !u!4 &1152215815 stripped
@@ -6354,6 +6564,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DestroyingBox (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014679366332481902, guid: 8661d74f6531ccd4c809392f045e6cbb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8661d74f6531ccd4c809392f045e6cbb, type: 3}
@@ -6589,6 +6804,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DestroyingBox (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 5014679366332481902, guid: 8661d74f6531ccd4c809392f045e6cbb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8661d74f6531ccd4c809392f045e6cbb, type: 3}
 --- !u!4 &1194689840 stripped
@@ -6673,6 +6893,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SolidBox (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
@@ -6776,6 +7001,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DeathFloor (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479513712323347865, guid: a3a8e85229d28fb4bbf33635c8670aa9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2479513712323347867, guid: a3a8e85229d28fb4bbf33635c8670aa9,
         type: 3}
@@ -6951,7 +7181,7 @@ GameObject:
   - component: {fileID: 1237176192}
   - component: {fileID: 1237176194}
   - component: {fileID: 1237176193}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7127,6 +7357,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &1242132085 stripped
@@ -7212,6 +7447,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &1273268473 stripped
@@ -7231,7 +7471,7 @@ GameObject:
   - component: {fileID: 1281767402}
   - component: {fileID: 1281767404}
   - component: {fileID: 1281767403}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7407,6 +7647,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &1288906005 stripped
@@ -7426,7 +7671,7 @@ GameObject:
   - component: {fileID: 1297523241}
   - component: {fileID: 1297523243}
   - component: {fileID: 1297523242}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7632,6 +7877,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &1319218657 stripped
@@ -7651,7 +7901,7 @@ GameObject:
   - component: {fileID: 1327296827}
   - component: {fileID: 1327296829}
   - component: {fileID: 1327296828}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7827,6 +8077,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &1347785103 stripped
@@ -7844,7 +8099,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1351607586}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7876,7 +8131,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1353066956}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SolidBoxes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8020,6 +8275,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &1370728263 stripped
@@ -8039,6 +8299,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DeathFloor (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479513712323347865, guid: a3a8e85229d28fb4bbf33635c8670aa9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2479513712323347867, guid: a3a8e85229d28fb4bbf33635c8670aa9,
         type: 3}
@@ -8205,6 +8470,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &1393796060 stripped
@@ -8312,6 +8582,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &1429532493 stripped
@@ -8402,6 +8677,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DestroyingBox (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5014679366332481902, guid: 8661d74f6531ccd4c809392f045e6cbb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8661d74f6531ccd4c809392f045e6cbb, type: 3}
 --- !u!4 &1437089495 stripped
@@ -8476,6 +8756,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SolidBox (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
@@ -8567,6 +8852,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DestroyingBox (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 5014679366332481902, guid: 8661d74f6531ccd4c809392f045e6cbb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8661d74f6531ccd4c809392f045e6cbb, type: 3}
 --- !u!4 &1454110675 stripped
@@ -8651,6 +8941,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SolidBox (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
@@ -8737,6 +9032,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &1511936530 stripped
@@ -8794,7 +9094,7 @@ GameObject:
   - component: {fileID: 1594448498}
   - component: {fileID: 1594448500}
   - component: {fileID: 1594448499}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8970,6 +9270,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &1633281548 stripped
@@ -9054,6 +9359,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SolidBox (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
@@ -9247,6 +9557,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DestroyingBox (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 5014679366332481902, guid: 8661d74f6531ccd4c809392f045e6cbb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8661d74f6531ccd4c809392f045e6cbb, type: 3}
 --- !u!4 &1688122538 stripped
@@ -9331,6 +9646,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SolidBox (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
@@ -9430,7 +9750,7 @@ GameObject:
   - component: {fileID: 1737978508}
   - component: {fileID: 1737978510}
   - component: {fileID: 1737978509}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9541,6 +9861,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DeathFloor (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2479513712323347865, guid: a3a8e85229d28fb4bbf33635c8670aa9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2479513712323347867, guid: a3a8e85229d28fb4bbf33635c8670aa9,
         type: 3}
       propertyPath: m_RootOrder
@@ -9640,7 +9965,7 @@ GameObject:
   - component: {fileID: 1776139996}
   - component: {fileID: 1776139998}
   - component: {fileID: 1776139997}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9748,7 +10073,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1789453496}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Objects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9787,7 +10112,7 @@ GameObject:
   - component: {fileID: 1790255935}
   - component: {fileID: 1790255937}
   - component: {fileID: 1790255936}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10072,6 +10397,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &1917559851 stripped
@@ -10091,7 +10421,7 @@ GameObject:
   - component: {fileID: 1933911588}
   - component: {fileID: 1933911590}
   - component: {fileID: 1933911589}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10199,7 +10529,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1987106853}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MapLimits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10235,7 +10565,7 @@ GameObject:
   - component: {fileID: 1990959222}
   - component: {fileID: 1990959224}
   - component: {fileID: 1990959223}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10345,7 +10675,7 @@ GameObject:
   - component: {fileID: 1997582890}
   - component: {fileID: 1997582892}
   - component: {fileID: 1997582891}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10516,6 +10846,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DestroyingBox (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5014679366332481902, guid: 8661d74f6531ccd4c809392f045e6cbb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8661d74f6531ccd4c809392f045e6cbb, type: 3}
 --- !u!4 &2023985883 stripped
@@ -10535,7 +10870,7 @@ GameObject:
   - component: {fileID: 2055206532}
   - component: {fileID: 2055206534}
   - component: {fileID: 2055206533}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10701,6 +11036,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &2067242646 stripped
@@ -10852,6 +11192,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SolidBox (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
 --- !u!4 &2111341273 stripped
@@ -10957,6 +11302,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: JumpPowerUp (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8368525310457073086, guid: 00beebdad9960ee4b94473d6da6184e9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00beebdad9960ee4b94473d6da6184e9, type: 3}
 --- !u!4 &2136550717 stripped
@@ -11061,6 +11411,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DeathFloor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479513712323347865, guid: a3a8e85229d28fb4bbf33635c8670aa9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2479513712323347867, guid: a3a8e85229d28fb4bbf33635c8670aa9,
         type: 3}
@@ -11206,6 +11561,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trophy
       objectReference: {fileID: 0}
+    - target: {fileID: 5662531490383414830, guid: 531b36a84e6ed304fb9dbdebdf83751d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5662531490383414831, guid: 531b36a84e6ed304fb9dbdebdf83751d,
         type: 3}
       propertyPath: loserScreen
@@ -11295,6 +11655,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SolidBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 8292213164055377685, guid: b900082c0c71a834982d8e12dbda864e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b900082c0c71a834982d8e12dbda864e, type: 3}
@@ -11400,6 +11765,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: JumpPowerUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8368525310457073086, guid: 00beebdad9960ee4b94473d6da6184e9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00beebdad9960ee4b94473d6da6184e9, type: 3}

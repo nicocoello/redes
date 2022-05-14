@@ -18,10 +18,12 @@ public class Character : MonoBehaviourPun
     public LayerMask whatIsGround;
     private void Awake()
     {
-        _rb = GetComponent<Rigidbody2D>();        
+        _rb = GetComponent<Rigidbody2D>();
+       
     }
     private void Update()
     {
+        if (!photonView.IsMine) return;
         timeSinceLastJump += Time.deltaTime;
         isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
     }
