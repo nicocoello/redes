@@ -23,18 +23,7 @@ public class CharacterController : MonoBehaviourPun
         //Movimiento
         inputHorizontal = Input.GetAxis("Horizontal");
         Vector2 dir = new Vector2(inputHorizontal, 0);
-        _character.Move(dir.normalized);
-        //Flip        
-        if (inputHorizontal > 0)
-        {
-            _character.transform.localScale = new Vector3(3, 3, 3);
-            isFlipping = false;
-        }
-        if (inputHorizontal < 0)
-        {
-            _character.transform.localScale = new Vector3(-3, 3, 3);
-            isFlipping = true;
-        }
+        _character.Move(dir.normalized);       
         //Jump
         if (_character.isGrounded == true && Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W))
         {

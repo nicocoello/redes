@@ -30,10 +30,14 @@ public class CharacterView : MonoBehaviourPun
         //All porque es una informacion que se va pisando constantemente.
         //El original obtiene la velocidad y le dice a los demas cual es para que la seteen.
         if (!photonView.IsMine) return;
-        
-        float speed = _rb.velocity.magnitude;
-       
+
+        //Flip
+        float speedX = _rb.velocity.x;
+        photonView.RPC("SetFlip", RpcTarget.All, speedX);
+        //Move
+        float speed = _rb.velocity.magnitude;       
         photonView.RPC("SetSpeed", RpcTarget.All, speed);
+        //Jump
         bool isJumping = _char.isGrounded;
         photonView.RPC("SetJump", RpcTarget.All, isJumping);       
     }      
@@ -65,5 +69,18 @@ public class CharacterView : MonoBehaviourPun
         {
             _anim.SetBool("IsJumping", true);
         }        
-    }   
+    }
+    [PunRPC]
+    public void SetFlip(float speedX)
+    {
+        
+        if (speedX < 0)
+        {
+            _sprite.flipX = true;
+        }
+        else
+        {
+            _sprite.flipX = false;
+        }
+    }
 }

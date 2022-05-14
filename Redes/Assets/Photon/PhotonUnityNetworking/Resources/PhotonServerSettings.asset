@@ -60,6 +60,7 @@ MonoBehaviour:
   - TeleportBack
   - Flip
   - SetSpeed2
+  - SetFlip
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
