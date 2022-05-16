@@ -21,10 +21,10 @@ public class Win : MonoBehaviourPun
             _hasWinner = true;
             var character = collision.GetComponent<Character>();
             if(character!=null)
-            {
-                
+            {                
                 var photonViewCharacter = character.GetComponent<PhotonView>();
                 var winner = photonViewCharacter.Owner;
+                //El que toca el trofeo gana y le aparece el HUD de victoria, al que perdio el de derrota.
                 photonView.RPC("Victory", RpcTarget.All, winner);
             }
         }

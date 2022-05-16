@@ -20,8 +20,8 @@ public class BadFloor : MonoBehaviourPun
             {
                 var photonViewCharacter = character.GetComponent<PhotonView>();
                 var Tped = photonViewCharacter.Owner;
+                //Si el jugador triggerea con los pinches lo manda al inicio nuevamente
                 photonView.RPC("TeleportBack", RpcTarget.All, Tped);
-
             }
         }
     }

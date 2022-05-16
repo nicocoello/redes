@@ -16,6 +16,7 @@ public class DestroyingBox : MonoBehaviourPun
             {
                 var photonViewCharacter = character.GetComponent<PhotonView>();
                 var Contact = photonViewCharacter.Owner;
+                //Si el jugador triggerea con la caja la destruye
                 photonView.RPC("SpeedPower", RpcTarget.All, Contact);
             }
         }

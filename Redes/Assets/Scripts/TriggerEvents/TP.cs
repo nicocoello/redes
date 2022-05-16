@@ -20,6 +20,7 @@ public class TP : MonoBehaviourPun
             {
                 var photonViewCharacter = character.GetComponent<PhotonView>();
                 var Tped = photonViewCharacter.Owner;
+                //Al triggerear transporta de un tp al otro al jugador
                 photonView.RPC("Teleport", RpcTarget.All, Tped);
                 
             }

@@ -16,9 +16,7 @@ public class Instantiator : MonoBehaviour
         //Instancio los diferentes prefabs de la carpeta resources
        var obj = PhotonNetwork.Instantiate(prefabName,spawnPoint.position,Quaternion.identity);       
        var nick = PhotonNetwork.Instantiate("PlayerNickName", point.position,point.rotation);       
-       nick.GetComponent<PlayerNickNames>().SetNick(PhotonNetwork.LocalPlayer.NickName,obj);
-       //var cam = PhotonNetwork.Instantiate("Camera",playerPos.position,playerPos.rotation);
-       //cam.GetComponent<CameraFollow>().SetFollow(obj);
+       nick.GetComponent<PlayerNickNames>().SetNick(PhotonNetwork.LocalPlayer.NickName,obj);      
     }
 
 }

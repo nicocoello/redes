@@ -20,6 +20,7 @@ public class JumpPowerUp : MonoBehaviourPun
             {
                 var photonViewCharacter = character.GetComponent<PhotonView>();
                 var boosted = photonViewCharacter.Owner;
+                //Si el jugador agarra el power up aumenta su jump force
                 photonView.RPC("JumpPowerJump", RpcTarget.All, boosted);
             }
         }

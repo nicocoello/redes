@@ -10,21 +10,20 @@ public class Character : MonoBehaviourPun
     float timeSinceLastJump = 0f;
     public float characterSpeed;
     public float jumpForce;    
-    Rigidbody2D _rb;
-    //Jump
+    Rigidbody2D _rb;   
     public bool isGrounded;    
     public Transform feetPos;
     public float checkRadius;
     public LayerMask whatIsGround;
     private void Awake()
     {
-        _rb = GetComponent<Rigidbody2D>();
-       
+        _rb = GetComponent<Rigidbody2D>();       
     }
     private void Update()
     {
         if (!photonView.IsMine) return;
         timeSinceLastJump += Time.deltaTime;
+        //Bool Grounded
         isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
     }
     public void Move(Vector2 dir)
@@ -36,13 +35,13 @@ public class Character : MonoBehaviourPun
 
     public void Jump()
     {
+        //Jump & Jump CD
         if(timeSinceLastJump > jumpCd)
         {
             timeSinceLastJump = 0;
             _rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);           
         }       
-    }
-    //Setea que la funcion se va a reproducir en la red
+    }    
     [PunRPC]
     public void ChangeColor(Vector3 infoColor)
     {

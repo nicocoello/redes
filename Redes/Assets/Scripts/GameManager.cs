@@ -7,7 +7,6 @@ using Photon.Realtime;
 
 public class GameManager : MonoBehaviourPunCallbacks
 {
-    float timeToStart = 2f;
     public int playersAmount;
     public GameObject wall;
     //Countdown
@@ -22,8 +21,10 @@ public class GameManager : MonoBehaviourPunCallbacks
         {
             var playerCount = PhotonNetwork.CurrentRoom.PlayerCount;
             if (playerCount >= playersAmount)
-            {                
-                photonView.RPC("StartGame", RpcTarget.All);                
+            {  
+                //Una vez que haya 2 jugadores se destruye la pared invisible
+                photonView.RPC("StartGame", RpcTarget.All);
+                //Cuando un jugador entra a la sala se le setea un contador, si otro entra el mismo se resetea para que tengan el mismo tiempo todos
                 photonView.RPC("Start", RpcTarget.All);
                 photonView.RPC("Update", RpcTarget.All);
                 //Si el master client ya comenzo el juego dejo la sala cerrada
