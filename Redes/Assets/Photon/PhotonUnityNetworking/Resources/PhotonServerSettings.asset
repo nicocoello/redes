@@ -61,6 +61,8 @@ MonoBehaviour:
   - Flip
   - SetSpeed2
   - SetFlip
+  - RequestConnect
+  - InstantiatePlayer
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
