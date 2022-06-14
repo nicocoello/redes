@@ -16,6 +16,7 @@ public class CharacterController : MonoBehaviourPun
         //Para que haya un unico controller
         if(!photonView.IsMine) Destroy(this);       
         _character = GetComponent<Character>();       
+        //Si es mio busco la camara getobjectoftype
     }
 
     void Update()

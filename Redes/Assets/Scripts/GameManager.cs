@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     [PunRPC]
     private void Start()
     {       
-        _currentTime = startingTime;     
+        _currentTime = startingTime;
     }
     [PunRPC]
     private void Update()

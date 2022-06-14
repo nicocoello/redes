@@ -21,6 +21,7 @@ public class Character : MonoBehaviourPun
     }
     private void Update()
     {
+        //Para el segundo parcial hacer esto PUNRPC
         if (!photonView.IsMine) return;
         timeSinceLastJump += Time.deltaTime;
         //Bool Grounded
