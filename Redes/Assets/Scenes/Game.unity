@@ -5479,7 +5479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddca6bb61716a2d4a8ff17a19e48baa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playersAmount: 2
+  playersAmount: 4
   wall: {fileID: 1168627675}
   startingTime: 300
   countDownText: {fileID: 22695262}
