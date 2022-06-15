@@ -80,7 +80,7 @@ public class CharacterView : MonoBehaviourPun
         }
         else
         {
-            _sprite.flipX = false;
+            _sprite.flipX = false;  
         }
     }
 }

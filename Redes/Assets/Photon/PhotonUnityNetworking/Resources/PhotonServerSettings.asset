@@ -16,7 +16,7 @@ MonoBehaviour:
     AppIdRealtime: 0b27e002-3eca-4227-9d0c-d4831b6c91e7
     AppIdFusion: 
     AppIdChat: 1f4a7ddb-cf03-4ce0-a01a-c19195059b0c
-    AppIdVoice: 
+    AppIdVoice: 74a4d673-ed27-4cc9-9b10-40ee0b08c094
     AppVersion: 
     UseNameServer: 1
     FixedRegion: 
@@ -63,6 +63,9 @@ MonoBehaviour:
   - SetFlip
   - RequestConnect
   - InstantiatePlayer
+  - CantHearYou
+  - ChangeColour
+  - HeresWhy
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
