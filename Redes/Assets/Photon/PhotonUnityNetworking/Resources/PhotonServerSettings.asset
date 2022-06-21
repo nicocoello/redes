@@ -66,6 +66,10 @@ MonoBehaviour:
   - CantHearYou
   - ChangeColour
   - HeresWhy
+  - RequestGetPlayer
+  - SetPlayer
+  - RequestMove
+  - RequestJump
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
