@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviourPunCallbacks
     public GameObject wall;
     //Countdown
     float _currentTime;
+    float _updateTime;
+    public float updatingTime;
     public float startingTime = 10f;
     public Text countDownText;
 
@@ -23,10 +25,7 @@ public class GameManager : MonoBehaviourPunCallbacks
             if (playerCount >= playersAmount)
             {  
                 //Una vez que haya 2 jugadores se destruye la pared invisible
-                photonView.RPC("StartGame", RpcTarget.All);
-                //Cuando un jugador entra a la sala se le setea un contador, si otro entra el mismo se resetea para que tengan el mismo tiempo todos
-                photonView.RPC("Start", RpcTarget.All);
-                photonView.RPC("Update", RpcTarget.All);
+                photonView.RPC("StartGame", RpcTarget.All);             
                 //Si el master client ya comenzo el juego dejo la sala cerrada
                 PhotonNetwork.CurrentRoom.IsOpen = false;
                 PhotonNetwork.CurrentRoom.IsVisible = false;
@@ -37,21 +36,39 @@ public class GameManager : MonoBehaviourPunCallbacks
     void StartGame()
     {
         Destroy(wall);        
-    }
-    [PunRPC]
+    }   
     private void Start()
-    {       
-        _currentTime = startingTime;
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            _currentTime = startingTime;
+        }        
     }
-    [PunRPC]
+    
     private void Update()
     {
-        _currentTime -= 1 * Time.deltaTime;
+        _currentTime -= Time.deltaTime;
         countDownText.text = _currentTime.ToString("0");
-        if (_currentTime <= 0)
+        if (PhotonNetwork.IsMasterClient)
         {
-            _currentTime = 0;
-            Time.timeScale = 0f;
+            _updateTime -= Time.deltaTime;
+            if(_updateTime <= 0)
+            {
+                photonView.RPC("UpdateTime", RpcTarget.Others, _currentTime);
+                _updateTime = updatingTime;
+            }
+            if (_currentTime <= 0)
+            {
+                _currentTime = 0;
+                Time.timeScale = 0f;
+            }
         }
+        
     }
+    [PunRPC]
+    public void UpdateTime(float time)
+    {
+        _currentTime = time;
+    }
+
 }

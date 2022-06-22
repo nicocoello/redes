@@ -4,28 +4,33 @@ using UnityEngine;
 using UnityEngine.UI;
 using Photon.Voice.Unity;
 using Photon.Voice.PUN;
+using Photon.Pun;
+using Photon.Realtime;
 
-public class SpeakerUI : MonoBehaviour
+public class SpeakerUI : MonoBehaviourPun
 {
     public Image prefab;
     public Speaker speaker;
-    public Transform micPos;
     Image _refImg;
+    Camera _cam;
+    bool _lastPlay;
+    public Vector3 offset;
+    
     private void Start()
     {
         _refImg = Instantiate<Image>(prefab, GameObject.Find("PlayerUI").transform);
+        _cam = Camera.main;
+        _lastPlay = speaker.IsPlaying;
+        _refImg.gameObject.SetActive(speaker.IsPlaying);
     }
     private void Update()
     {
-        if (speaker.IsPlaying)
-        {
-            _refImg.gameObject.SetActive(true);
-        }
-        else
-        {
-            _refImg.gameObject.SetActive(false);
-        }
-        _refImg.transform.position = micPos.transform.position;
+        Vector3 pos = transform.position + offset;
+        _refImg.transform.position = _cam.WorldToScreenPoint(pos);
+        if (_lastPlay == speaker.IsPlaying) return;
+        _lastPlay = speaker.IsPlaying;
+        _refImg.gameObject.SetActive(speaker.IsPlaying);
+               
     }
     private void OnDestroy()
     {
@@ -33,6 +38,6 @@ public class SpeakerUI : MonoBehaviour
         {
             Destroy(_refImg.gameObject);
         }
-    }
+    }   
 }
     

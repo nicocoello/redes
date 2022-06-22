@@ -19,24 +19,29 @@ public class HybridCharacterView : MonoBehaviourPun
     }
     private void Start()
     {
-        //OthersBuffered es para todos los demas que se conecten y para los que estan en ese momento.
-        CallChangeColor(Color.yellow, RpcTarget.OthersBuffered);
-        CallChangeColor(Color.blue, photonView.Owner);
+        if (photonView.IsMine)
+        {
+            //OthersBuffered es para todos los demas que se conecten y para los que estan en ese momento.
+            CallChangeColor(Color.yellow, RpcTarget.OthersBuffered);
+            CallChangeColor(Color.blue, photonView.Owner);
+        }        
     }
     private void Update()
     {
         //All porque es una informacion que se va pisando constantemente.
         //El original obtiene la velocidad y le dice a los demas cual es para que la seteen.       
-
-        //Flip
-        float speedX = _rb.velocity.x;
-        photonView.RPC("SetFlip", RpcTarget.All, speedX);
-        //Move
-        float speed = _rb.velocity.magnitude;
-        photonView.RPC("SetSpeed", RpcTarget.All, speed);
-        //Jump
-        bool isJumping = _char.isGrounded;
-        photonView.RPC("SetJump", RpcTarget.All, isJumping);
+        if (photonView.IsMine)
+        {
+            //Flip        
+            float speedX = _rb.velocity.x;
+            photonView.RPC("SetFlip", RpcTarget.All, speedX);
+            //Move
+            float speed = _rb.velocity.magnitude;
+            photonView.RPC("SetSpeed", RpcTarget.All, speed);
+            //Jump
+            bool isJumping = _char.isGrounded;
+            photonView.RPC("SetJump", RpcTarget.All, isJumping);
+        }        
     }
     public void CallChangeColor(Color color, RpcTarget targets)
     {

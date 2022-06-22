@@ -9,26 +9,24 @@ using Photon.Realtime;
 public class PlayerNickNames : MonoBehaviourPun
 {
     public TextMeshPro playerNicknames;
-    public Vector3 offset;
+    public Vector3 offset;  
+    PhotonView _id;
     GameObject _obj;
-    public void SetNick(string name, GameObject obj)
-    {
-        playerNicknames.text = name;
-        _obj = obj;
-        photonView.RPC("UpdateNickName", RpcTarget.OthersBuffered, name);
+    public void SetNick(string name, int ID)
+    {        
+        photonView.RPC("UpdateNickName", RpcTarget.AllBuffered, name,ID);
     }    
     private void Update()
     {
         //Si no tengo el objeto no hago nada
-        if (_obj == null) return;
-        if (photonView.IsMine)
-        {
-         transform.position = _obj.transform.position + offset;
-        }
+        if (_obj == null) return;       
+        transform.position = _obj.transform.position + offset;        
     }
     [PunRPC]
-    public void UpdateNickName(string name)
+    public void UpdateNickName(string name, int ID)
     {
+        PhotonView pv = PhotonView.Find(ID);
+        _obj = pv.gameObject;
         playerNicknames.text = name;        
     }
 }

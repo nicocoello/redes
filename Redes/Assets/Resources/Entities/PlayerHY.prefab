@@ -380,7 +380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 8959781304041709094, guid: c96995784a9c1ad4da3e8b2c3ffbe8a2, type: 3}
   speaker: {fileID: 1207262611000962672}
-  micPos: {fileID: 1864438053160398909}
+  offset: {x: 0, y: 1.5, z: 0}
 --- !u!114 &3937298076180985306
 MonoBehaviour:
   m_ObjectHideFlags: 0
