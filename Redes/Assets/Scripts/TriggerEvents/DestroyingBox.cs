@@ -11,7 +11,7 @@ public class DestroyingBox : MonoBehaviourPun
     {
         if (PhotonNetwork.IsMasterClient)
         {
-            var character = collision.GetComponent<Character>();
+            var character = collision.GetComponent<HybridCharacter>();
             if (character != null)
             {
                 var photonViewCharacter = character.GetComponent<PhotonView>();

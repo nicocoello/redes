@@ -19,7 +19,7 @@ public class Win : MonoBehaviourPun
         if (PhotonNetwork.IsMasterClient && !_hasWinner)
         {
             _hasWinner = true;
-            var character = collision.GetComponent<Character>();
+            var character = collision.GetComponent<HybridCharacter>();
             if(character!=null)
             {                
                 var photonViewCharacter = character.GetComponent<PhotonView>();

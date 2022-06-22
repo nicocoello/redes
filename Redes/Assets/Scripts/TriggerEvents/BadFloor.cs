@@ -6,11 +6,11 @@ using Photon.Realtime;
 
 public class BadFloor : MonoBehaviourPun
 {
-    public Character _char;
+    public HybridCharacter _char;
     public Transform respawn;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        var character = collision.GetComponent<Character>();
+        var character = collision.GetComponent<HybridCharacter>();
         _char = character;
         if (PhotonNetwork.IsMasterClient)
         {

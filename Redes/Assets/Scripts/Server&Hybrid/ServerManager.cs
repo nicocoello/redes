@@ -9,6 +9,7 @@ public class ServerManager : MonoBehaviourPun
     public string folderPrefabs = "";
     [SerializeField] GameObject _prefab;
     [SerializeField] Transform _spawnPoint;
+    [SerializeField] Transform _point;
     //Guardo al cliente como servidor
     Player _server;
     Dictionary<Player, HybridCharacter> _characters = new Dictionary<Player, HybridCharacter>();
@@ -23,9 +24,21 @@ public class ServerManager : MonoBehaviourPun
         GameObject obj = PhotonNetwork.Instantiate(folderPrefabs + "/" + _prefab.name, _spawnPoint.position, Quaternion.identity);
         HybridCharacter character = obj.GetComponent<HybridCharacter>();
         _characters[client] = character;
-        //PREGUNTAR AL PROFE SI ESTO ESTA BIEN
-        /*var nick = PhotonNetwork.Instantiate("PlayerNickName", _point.position, _point.rotation);
-        nick.GetComponent<PlayerNickNames>().SetNick(PhotonNetwork.LocalPlayer.NickName, obj);*/
+        int ID = character.photonView.ViewID;
+        photonView.RPC("RequestRegisterPlayer", RpcTarget.Others, client, ID);
+        //Nicknames
+        var nick = PhotonNetwork.Instantiate("PlayerNickName", _point.position, _point.rotation);
+        nick.GetComponent<PlayerNickNames>().SetNick(PhotonNetwork.LocalPlayer.NickName, obj);
+    }
+    //Esto es para que todos los clientes tengan registro de los demas jugadores
+    [PunRPC]
+    public void RequestRegisterPlayer(Player client, int ID)
+    {
+        PhotonView pv = PhotonView.Find(ID);
+        if (pv == null) return;        
+        var character = pv.GetComponent<HybridCharacter>();
+        if (character == null) return;
+        _characters[client] = character;
     }
     [PunRPC]
     public void RequestMove(Player client, Vector2 dir)

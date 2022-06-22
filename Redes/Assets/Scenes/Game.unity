@@ -3123,6 +3123,7 @@ MonoBehaviour:
   folderPrefabs: Entities
   _prefab: {fileID: 2330047389196387652, guid: bb90cb8f94c1c6041bbfab63b99acf8b, type: 3}
   _spawnPoint: {fileID: 1843355175}
+  _point: {fileID: 1319171059}
 --- !u!114 &389553097
 MonoBehaviour:
   m_ObjectHideFlags: 0

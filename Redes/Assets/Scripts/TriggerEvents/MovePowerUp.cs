@@ -7,10 +7,10 @@ using Photon.Realtime;
 public class MovePowerUp : MonoBehaviourPun
 {
     bool _hasBoosted;
-    public Character _char;  
+    public HybridCharacter _char;  
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        var character = collision.GetComponent<Character>();
+        var character = collision.GetComponent<HybridCharacter>();
         _char = character;
         if (PhotonNetwork.IsMasterClient &&!_hasBoosted)
         {
