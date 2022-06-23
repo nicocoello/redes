@@ -36,5 +36,6 @@ public class BadFloor : MonoBehaviourPun
         {
             _char.transform.position = respawn.transform.position;
         }
+        //Cambiar por ID
     }
 }

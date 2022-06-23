@@ -37,6 +37,7 @@ public class TP : MonoBehaviourPun
         {
             _char.transform.position = destiny.transform.position; 
         }
+        //Cambiar por ID
     }
 }
 

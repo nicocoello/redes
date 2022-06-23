@@ -21,21 +21,14 @@ public class MovePowerUp : MonoBehaviourPun
                 var photonViewCharacter = character.GetComponent<PhotonView>();
                 var boosted = photonViewCharacter.Owner;
                 //Si el jugador agarra el power up aumenta su velocidad
-                photonView.RPC("SpeedPower", RpcTarget.All,boosted);                
+                photonView.RPC("SpeedPower", boosted);
+                PhotonNetwork.Destroy(gameObject);
             }
         }                
     }
     [PunRPC]
-    void SpeedPower(Player player) 
-    {
-        if (player == PhotonNetwork.LocalPlayer)
-        {
-            _char.characterSpeed = 4;
-            Destroy(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }    
+    void SpeedPower() 
+    {       
+            _char.characterSpeed = 4;   
     }
 }
