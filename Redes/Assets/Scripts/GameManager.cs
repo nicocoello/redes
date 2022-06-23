@@ -11,10 +11,10 @@ public class GameManager : MonoBehaviourPunCallbacks
     public GameObject wall;
     //Countdown
     float _currentTime;
-    float _updateTime;
+    float _updateTime;    
     public float updatingTime;
     public float startingTime = 10f;
-    public Text countDownText;
+    public Text countDownText;   
 
 
     public override void OnPlayerEnteredRoom(Player newPlayer)
@@ -42,7 +42,11 @@ public class GameManager : MonoBehaviourPunCallbacks
         if (PhotonNetwork.IsMasterClient)
         {
             _currentTime = startingTime;
-        }        
+        }
+        /*else
+        {
+            photonView.RPC("RequestTime", RpcTarget.MasterClient,_updateTime);
+        }*/
     }
     
     private void Update()
@@ -70,5 +74,9 @@ public class GameManager : MonoBehaviourPunCallbacks
     {
         _currentTime = time;
     }
-
+  /*  [PunRPC]
+    public void RequestTime(Player client ,float time)
+    {        
+        
+    }*/
 }

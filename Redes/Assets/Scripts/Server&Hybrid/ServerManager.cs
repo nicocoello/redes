@@ -29,7 +29,7 @@ public class ServerManager : MonoBehaviourPun
         //Nicknames
         var nick = PhotonNetwork.Instantiate("PlayerNickName", _point.position, _point.rotation);
         nick.GetComponent<PlayerNickNames>().SetNick(PhotonNetwork.LocalPlayer.NickName, ID);
-    }
+    }  
     //Esto es para que todos los clientes tengan registro de los demas jugadores
     [PunRPC]
     public void RequestRegisterPlayer(Player client, int ID)
